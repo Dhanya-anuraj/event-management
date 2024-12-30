@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Private Dinner Event Management</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 font-serif p-10">
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+  
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+  
+                <!-- Menu items -->
+                <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                    <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                    <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                    <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                    <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+  
+                </ul>
+            </div>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+            <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+            <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+            <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+            <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+            <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+  
+        </div>
+    </nav>
+
+    <div class="max-w-3xl mx-auto bg-white p-8 mt-36 rounded-xl shadow-2xl border-2 border-pink-300">
+        <h2 class="text-4xl font-bold text-center text-pink-600 mb-8">Private Dinner Event Management</h2>
+
+        <form>
+            <!-- Contact Information Section -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-pink-600 mb-4">Contact Information</h3>
+
+                <!-- Name -->
+                <div class="mb-6">
+                    <label for="name" class="block text-lg font-medium text-pink-600 mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                </div>
+
+                <!-- Email -->
+                <div class="mb-6">
+                    <label for="email" class="block text-lg font-medium text-pink-600 mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                </div>
+
+                <!-- Phone No -->
+                <div class="mb-6">
+                    <label for="phone" class="block text-lg font-medium text-pink-600 mb-2">Phone Number</label>
+                    <input type="tel" id="phone" name="phone" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                </div>
+            </section>
+
+            <!-- Event Details Section -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-pink-600 mb-4">Event Details</h3>
+
+                <!-- Date & Time -->
+                <div class="mb-6">
+                    <label for="event_date" class="block text-lg font-medium text-pink-600 mb-2">Event Date</label>
+                    <input type="date" id="event_date" name="event_date" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                </div>
+
+                <!-- Budget -->
+                <div class="mb-6">
+                    <label for="budget" class="block text-lg font-medium text-pink-600 mb-2">Event Budget</label>
+                    <input type="number" id="budget" name="budget" min="0" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                </div>
+            </section>
+
+            <!-- Private Dinner Preferences Section -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-pink-600 mb-4">Private Dinner Preferences</h3>
+
+                <!-- Cuisine Type -->
+                <div class="mb-6">
+                    <label for="cuisine_type" class="block text-lg font-medium text-pink-600 mb-2">Preferred Cuisine</label>
+                    <select name="cuisine_type" id="cuisine_type" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        <option value="" disabled selected>Select Cuisine</option>
+                        <option value="italian">Italian</option>
+                        <option value="french">French</option>
+                        <option value="asian">Asian</option>
+                        <option value="american">American</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <!-- Wine Pairing -->
+                <div class="mb-6">
+                    <label class="inline-flex items-center mr-6">
+                        <input type="checkbox" name="wine_pairing" value="yes" class="form-checkbox text-pink-500">
+                        <span class="ml-2">Would you like wine pairing with your dinner?</span>
+                    </label>
+                </div>
+
+                <!-- Live Music -->
+                <div class="mb-6">
+                    <label class="inline-flex items-center mr-6">
+                        <input type="checkbox" name="live_music" value="yes" class="form-checkbox text-pink-500">
+                        <span class="ml-2">Would you like live music during the event?</span>
+                    </label>
+                </div>
+
+                <!-- Photography -->
+                <div class="mb-6">
+                    <label for="photography" class="block text-lg font-medium text-pink-600 mb-2">Photography for the Event</label>
+                    <select name="photography" id="photography" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        <option value="" disabled selected>Select Option</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                </div>
+
+                <!-- Special Requests -->
+                <div class="mb-6">
+                    <label for="special_requests" class="block text-lg font-medium text-pink-600 mb-2">Special Requests</label>
+                    <textarea name="special_requests" id="special_requests" rows="4" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                </div>
+            </section>
+
+            <!-- Venue & Guest List Section -->
+            <section class="mb-8">
+                <h3 class="text-2xl font-semibold text-pink-600 mb-4">Venue & Guest List</h3>
+
+                <!-- Venue -->
+                <div class="mb-6">
+                    <label for="venue" class="block text-lg font-medium text-pink-600 mb-2">Venue Location</label>
+                    <input type="text" id="venue" name="venue" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required>
+                </div>
+
+                <!-- Guest List -->
+                <div class="mb-6">
+                    <label for="guest_list" class="block text-lg font-medium text-pink-600 mb-2">Guest List</label>
+                    <textarea id="guest_list" name="guest_list" rows="4" class="w-full p-4 border-2 border-pink-300 rounded-md focus:outline-none focus:ring-2 focus:ring-pink-500" required></textarea>
+                </div>
+            </section>
+
+            <!-- Submit Button -->
+            <div class="flex justify-center">
+                <button type="submit" class="px-8 py-4 bg-pink-500 text-white font-bold rounded-full hover:bg-pink-600 transition duration-300 ease-in-out">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    <script>
+        // Mobile menu toggle script
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+    
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+</body>
+</html>

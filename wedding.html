@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intimate Wedding Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: serif;
+        }
+    </style>
+    <!-- Swiper.js CDN for Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body class="bg-pink-50">
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+  
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+  
+                <!-- Menu items -->
+                <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                    <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                    <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                    <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                    <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+  
+                </ul>
+            </div>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+            <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+            <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+            <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+            <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+            <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+  
+        </div>
+    </nav>
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-10 mt-36">
+        <!-- Header Section -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold text-pink-500 mb-4 drop-shadow-md">Intimate Wedding Services</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Let us make your dream wedding come true with our tailored services, attention to detail, and passion for perfection.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Venue Decoration -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://media-api.xogrp.com/images/def618a1-9072-4f4a-a824-1af5e7ff554a~rs_768.h-cr_0.0.1537.1153" alt="Venue Decoration" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Venue Decoration</h2>
+                    <p class="text-gray-700">Transform your wedding venue with stunning floral and themed decorations to match your style.</p>
+                </div>
+            </div>
+            <!-- Card 2: Catering Services -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://cdn0.weddingwire.in/vendor/9970/3_2/640/jpeg/caterers-grandiose-caterers-cateringsetup-1_15_449970-168724186819641.jpeg" alt="Catering Services" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Catering Services</h2>
+                    <p class="text-gray-700">Delight your guests with a range of cuisines, from traditional to contemporary dishes.</p>
+                </div>
+            </div>
+            <!-- Card 3: Photography & Videography -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://media.istockphoto.com/id/540387740/photo/photographer-is-taking-pictures-the-bride-in-the-studio.jpg?s=612x612&w=0&k=20&c=qr_GkLd7RHR5eXjsb-hLmGNRNVNfjN_SIdWSCFXWKls=" alt="Photography & Videography" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Photography & Videography</h2>
+                    <p class="text-gray-700">Capture the most precious moments of your big day with professional photography services.</p>
+                </div>
+            </div>
+            <!-- Card 4: Entertainment -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://cdn0.hitched.co.uk/article/9226/3_2/1280/png/136229-2-a-bride-groom-and-their-wedding-guests-dancing-on-the-dancefloor-at-their-wedding-reception-while-listening-to-their-wedding-entertainment.jpeg" alt="Entertainment" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Entertainment</h2>
+                    <p class="text-gray-700">From live bands to DJs, ensure your guests have an unforgettable experience.</p>
+                </div>
+            </div>
+            <!-- Card 5: Makeup & Styling -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://images.squarespace-cdn.com/content/v1/5938abfc3e00be2ed1d4b7b9/7e5ee484-7df2-4bbb-8095-5cf2e47fd4e5/wedding-hair-las-vegas-4a.jpg" alt="Makeup & Styling" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Makeup & Styling</h2>
+                    <p class="text-gray-700">Look your absolute best with professional makeup artists and stylists for the couple and family.</p>
+                </div>
+            </div>
+            <!-- Card 6: Wedding Planning -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://media-api.xogrp.com/images/eb7f8828-b172-48b4-b888-d1babc551227~rs_768.h" alt="Wedding Planning" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Wedding Planning</h2>
+                    <p class="text-gray-700">From start to finish, we handle every detail to make your wedding stress-free and magical.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="mt-16">
+            <h2 class="text-4xl font-bold text-center text-pink-500 mb-8 drop-shadow-md">Events Conducted by Us</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="https://cdn0.weddingwire.in/article/1478/3_2/1280/jpg/78741-intimate-weddings-creative-wedding-photography-lead-image.webp" alt="Event 1" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://cdn0.weddingwire.in/article/1979/3_2/960/jpg/79791-the-experts-guide-to-planning-an-intimate-50-people-wedding-roma-ganesh-photography-lead-image.jpeg" alt="Event 2" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL0wXZu9RfvijuTMeN8xEq7KqY9dBDW5Ms5g&s" alt="Event 3" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="https://i.pinimg.com/736x/9c/61/6e/9c616e5587e340891eb588cf91211535.jpg" alt="Event 4" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                </div>
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="text-center mt-16">
+            <a href="./form_wedding.html"><button class="bg-pink-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-pink-600 transition duration-300 mr-4">
+                Book Now
+            </button></a>
+            <a href="https://wa.me/91123456789?text=Hi%2C%20For%20Event%20Booking%2C%20Leave%20us%20a%20message%20!!!!!
+            ">
+            <button class="border-2 border-pink-500 text-pink-500 px-8 py-4 rounded-full font-semibold hover:bg-pink-500 hover:text-white shadow-lg transition duration-300">
+                Contact Us
+            </button></a>
+        </div>
+    </div>
+
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        
+        const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    </script>
+</body>
+</html>

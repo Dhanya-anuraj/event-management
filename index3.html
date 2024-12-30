@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 py-10">
+ <!-- Navbar -->
+ <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <div class="container mx-auto px-4">
+        <div class="flex justify-between items-center py-4">
+            <!-- Logo -->
+            <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+
+            <!-- Mobile menu button -->
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Menu items -->
+            <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+        <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+        <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+        <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+        <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+        <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+
+    </div>
+</nav>
+    <div class="flex items-center justify-center h-32 mb-8 mt-36 bg-pink-400">
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-white font-serif">
+            Our Event Management Services
+        </h1>
+    </div>
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="https://thumbs.dreamstime.com/b/wedding-stage-decoration-featuring-platform-flower-arrangements-peach-white-drapes-ai-generated-flowers-331632360.jpg"
+                    alt="Corporate Events" class="w-full h-48 object-cover rounded-md">
+                <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mt-4 text-center font-serif">Stage Decoration
+                </h2>
+                <p class="text-gray-600 mt-2 text-center text-sm sm:text-base font-serif">Our decor remodel the events
+                    with
+                    instant
+                    elegance. Our wedding stages are designed to be dazzling, featuring modern arrangements that
+                    enlarge their beauty. Each stage becomes a loved backdrop for a new family’s journey, spreading love
+                    and joy.</p>
+                <a href="http://127.0.0.1:5500/index1.html">
+                    <button
+                        class="mt-4 bg-pink-400 text-white px-4 py-2 rounded hover:bg-white hover:text-pink-800 border border-pink-400">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+            <!-- Card 2 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="https://thumbs.dreamstime.com/b/people-group-catering-buffet-food-indoor-luxury-restaurant-meat-colorful-fruits-vegetables-people-group-catering-119508138.jpg"
+                    alt="Weddings" class="w-full h-48 object-cover rounded-md">
+                <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mt-4 text-center font-serif">Caters</h2>
+                <p class="text-gray-600 mt-2 text-center text-sm sm:text-base font-serif">A taste of food becomes a
+                    treasured
+                    memory. For your wedding, delight in disparate cuisines prepared by talented chefs using the finest
+                    ingredients. We offer Kerala, Arabic, and Chinese menus to make your event unforgettable.</p><br>
+                <a href="http://127.0.0.1:5500/index1.html">
+                    <button
+                        class="mt-4 bg-pink-400 text-white px-4 py-2 rounded hover:bg-white hover:text-pink-800 border border-pink-400">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+            <!-- Card 3 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZqLtbUDWsq6xE8Gl-HVozvgNXEc5eV4f0oQ&s"
+                    alt="Birthday Parties" class="w-full h-48 object-cover rounded-md">
+                <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mt-4 text-center font-serif">DJ and
+                    Entertainment
+                </h2>
+                <p class="text-gray-600 mt-2 text-center text-sm sm:text-base font-serif">The right music and
+                    entertainment
+                    uplift
+                    every event. Our team includes top DJs and a variety of performers—dancers, singers, music bands,
+                    live artists, and orchestras—to excite your celebration and ensure an eventful experience.</p>
+                <a href="http://127.0.0.1:5500/index1.html">
+                    <button
+                        class="mt-4 bg-pink-400 text-white px-4 py-2 rounded hover:bg-white hover:text-pink-800 border border-pink-400">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+            <!-- Card 4 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/036/967/172/large/the-newlyweds-stand-near-a-retro-car-and-kiss-against-the-background-of-the-blue-sky-the-wedding-day-of-the-newlyweds-in-love-a-camera-runs-over-them-they-pose-for-the-camera-video.jpg"
+                    alt="Product Launches" class="w-full h-48 object-cover rounded-md">
+                <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mt-4 text-center font-serif">Photography and
+                    Videography</h2>
+                <p class="text-gray-600 mt-2 text-center text-sm sm:text-base font-serif">Smiles and moments are
+                    collected
+                    in
+                    memories through our lens. Our team of professional photographers and videographers is dedicated to
+                    preserving every attractive moment.</p>
+                <a href="http://127.0.0.1:5500/index1.html">
+                    <button
+                        class="mt-4 bg-pink-400 text-white px-4 py-2 rounded hover:bg-white hover:text-pink-800 border border-pink-400">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+            <!-- Card 5 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="https://interiors-collective.com/wp-content/uploads/2024/07/Featured-7-800x450.png"
+                    alt="Cultural Events" class="w-full h-48 object-cover rounded-md">
+                <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mt-4 text-center font-serif">Flower Decoration
+                </h2>
+                <p class="text-gray-600 mt-2 text-center text-sm sm:text-base font-serif">Flowers, whether natural or
+                    artificial,
+                    play a vital role in wedding events. We specialize in delicate blooms to decorate with the perfect
+                    floral touches.</p><br>
+                <a href="http://127.0.0.1:5500/index1.html">
+                    <button
+                        class="mt-4 bg-pink-400 text-white px-4 py-2 rounded hover:bg-white hover:text-pink-800 border border-pink-400">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+            <!-- Card 6 -->
+            <div class="bg-white rounded-lg shadow-md p-6 flex flex-col items-center">
+                <img src="https://www.nikharunisexsalon.com/wp-content/uploads/2022/09/mackup-800x450-1.jpg"
+                    alt="Exhibitions & Trade Shows" class="w-full h-48 object-cover rounded-md">
+                <h2 class="text-lg sm:text-xl font-semibold text-gray-800 mt-4 text-center font-serif">Makeup And Mehndi
+                </h2>
+                <p class="text-gray-600 mt-2 text-center text-sm sm:text-base font-serif">Henna design is a timeless art
+                    that
+                    beautifies hands and legs with intricate patterns. Our skilled staff ensures you look remarkable for
+                    any occasion.</p><br>
+                <a href="http://127.0.0.1:5500/index1.html">
+                    <button
+                        class="mt-4 bg-pink-400 text-white px-4 py-2 rounded hover:bg-white hover:text-pink-800 border border-pink-400">
+                        Contact Us
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Mobile menu toggle script
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+    
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+</body>
+
+</html>

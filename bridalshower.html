@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bridal Shower Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: serif;
+        }
+    </style>
+    <!-- Swiper.js CDN for Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body class="bg-pink-50">
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+  
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+  
+                <!-- Menu items -->
+                <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                    <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                    <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                    <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                    <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+  
+                </ul>
+            </div>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+            <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+            <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+            <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+            <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+            <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+  
+        </div>
+    </nav>
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-10">
+        <!-- Header Section -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold text-pink-500 mb-4 mt-36 drop-shadow-md">Bridal Shower Services</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Celebrate the bride-to-be with a beautifully organized bridal shower, filled with elegance, love, and memorable moments.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Themed Decorations -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://lh5.googleusercontent.com/3OM-37VDM7G89eThPfWhD5TL5YNNncIQ-u4tUDRJa9r_M4AfalM6JGCprwsanyBWKdawTcD1XPbW_pkxKZhBrJ7CDoo-X59FfeHEdlyCyCYnizqvaNtqklm-HdI7WJwy-jmWsx2V" alt="Themed Decorations" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Themed Decorations</h2>
+                    <p class="text-gray-700">Gorgeous decorations designed to create an intimate and elegant bridal shower atmosphere.</p>
+                </div>
+            </div>
+            <!-- Card 2: Dessert Tables -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVK6WrlEW_NvgBy4PzphbnIRAKfda_NEbLMtWEITZ8YeWkHaqxRP9NR4v5TC7iC9au_cU2g-cyAyKT_UYjYUwzGll9KusICgZyHmWiE8N4l8n7vHsCEAjlTTXK9lbCPZ5BagNKvL2MJyY/s1600/fullsizeoutput_70a6.jpeg" alt="Dessert Tables" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Dessert Tables</h2>
+                    <p class="text-gray-700">Beautifully arranged dessert tables with cakes, cupcakes, and treats to delight your guests.</p>
+                </div>
+            </div>
+            <!-- Card 3: Games & Activities -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://www.shaadidukaan.com/vogue/wp-content/uploads/2019/07/bridal-shower-games-ideas.jpeg" alt="Games & Activities" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Games & Activities</h2>
+                    <p class="text-gray-700">Fun and interactive games to keep everyone entertained and create special moments.</p>
+                </div>
+            </div>
+            <!-- Card 4: Catering Services -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://images.squarespace-cdn.com/content/v1/601d0b964a18796f96c3ae3e/3e3b4310-e618-47c3-9043-1791ce98f786/bridal2.jpg" alt="Catering Services" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Catering Services</h2>
+                    <p class="text-gray-700">Custom menus with delicious food and drinks tailored to your preferences.</p>
+                </div>
+            </div>
+            <!-- Card 5: Photography & Videography -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://i0.wp.com/www.framehunt.com/wp-content/uploads/2021/03/68481099_2425208750901692_4412004295822540800_o.jpg?fit=1680%2C1120&ssl=1" alt="Photography & Videography" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Photography & Videography</h2>
+                    <p class="text-gray-700">Capture the joyful moments with professional photography and videography services.</p>
+                </div>
+            </div>
+            <!-- Card 6: Personalized Invitations -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://rukminim2.flixcart.com/image/850/1000/xif0q/card/w/8/o/1-ims-bdsi-910176-jpf-ik-1110a-5x7-invitation-inkdotpot-original-imagzgx8vkhyqxzd.jpeg?q=90&crop=false" alt="Personalized Invitations" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Personalized Invitations</h2>
+                    <p class="text-gray-700">Beautifully designed invitations customized to reflect the bride-to-be's style.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="mt-16">
+            <h2 class="text-4xl font-bold text-center text-pink-500 mb-8 drop-shadow-md">Events Conducted by Us</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="https://i.pinimg.com/736x/72/83/dc/7283dc4e119b4dd87d6cab44c90b74fb.jpg" alt="Bridal Shower Event 1" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://img.weddingbazaar.com/shaadisaga_production/photos/pictures/000/779/704/new_medium/anushka_mulchandani.jpg?1553578123" alt="Bridal Shower Event 2" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://media.istockphoto.com/id/1222865376/photo/young-beautiful-woman-opening-gift-bag-at-her-bridal-shower.jpg?s=612x612&w=0&k=20&c=QA1n_kteTG3AmbQCp1_IYAwwprh0ZerrpGaHgEX7yHI=" alt="Bridal Shower Event 3" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="https://img.weddingbazaar.com/shaadisaga_production/photos/pictures/002/693/128/new_medium/IMG_0292.JPG?1623246521" alt="Bridal Shower Event 4" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                </div>
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="text-center mt-16">
+            <a href="./bridalshower.html">
+            <button class="bg-pink-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-pink-600 transition duration-300 mr-4">
+                Book Now
+            </button></a>
+            <a href="https://wa.me/91123456789?text=Hi%2C%20For%20Event%20Booking%2C%20Leave%20us%20a%20message%20!!!!!
+            "><button class="border-2 border-pink-500 text-pink-500 px-8 py-4 rounded-full font-semibold hover:bg-pink-500 hover:text-white shadow-lg transition duration-300">
+                Contact Us
+            </button></a>
+        </div>
+    </div>
+
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    </script>
+</body>
+</html>

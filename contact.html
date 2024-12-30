@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+        <!-- FontAwesome CDN -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto  font-serif">
+         <!-- Navbar -->
+         <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+            <div class="container mx-auto px-4">
+                <div class="flex justify-between items-center py-4">
+                    <!-- Logo -->
+                    <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+      
+                    <!-- Mobile menu button -->
+                    <div class="md:hidden">
+                        <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                            </svg>
+                        </button>
+                    </div>
+      
+                    <!-- Menu items -->
+                    <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                        <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                        <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                        <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                        <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+      
+                    </ul>
+                </div>
+            </div>
+      
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+                <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+                <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+                <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+                <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+                <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+      
+            </div>
+        </nav>
+        <!-- Header -->
+        <div class="bg-gradient-to-r from-pink-500 to-purple-500 w-full h-32 mt-36 flex items-center justify-center">
+            <h3 class="text-white text-5xl font-bold font-serif">Contact Us</h3>
+        </div>
+
+        <!-- Contact Form & Info -->
+        <div class="grid md:grid-cols-2 gap-8 mt-10 px-4">
+            <!-- Contact Form -->
+            <div class="bg-white rounded-lg shadow-lg p-8 mb-10">
+                <h3 class="text-2xl font-semibold mb-4 text-gray-800">Send Us a Message</h3>
+                <form action="#" method="POST" class="space-y-6">
+                    <!-- Name -->
+                    <div>
+                        <label for="name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" class="mt-1 p-3 w-full border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                    </div>
+                    <!-- Email -->
+                    <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" class="mt-1 p-3 w-full border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required>
+                    </div>
+                    <!-- Message -->
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700">Your Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Type your message here" class="mt-1 p-3 w-full border border-gray-300 rounded-lg focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                    </div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-full bg-gradient-to-r from-pink-500 to-purple-500 text-white p-3 rounded-lg hover:shadow-lg ">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="space-y-6">
+                <h3 class="text-2xl font-semibold text-gray-800">Contact Information</h3>
+                <div class="w-56 h-1 bg-pink-400 my-4"></div>
+                <p class="text-gray-700">Feel free to reach out to us through the following contact details:</p>
+                <div class="space-y-4">
+                    <!-- Phone -->
+                    <div class="flex items-center">
+                        <i class="fas fa-phone-alt text-pink-400 text-lg mr-4"></i>
+                        <span class="text-gray-700">+91 8564329180</span>
+                    </div>
+                    <!-- Email -->
+                    <div class="flex items-center">
+                        <i class="fas fa-envelope  text-pink-400 text-lg mr-4"></i>
+                        <span class="text-gray-700">eventive@gmail.com</span>
+                    </div>
+                    <!-- Address -->
+                    <div class="flex items-center">
+                        <i class="fas fa-map-marker-alt  text-pink-400 text-lg mr-4"></i>
+                        <span class="text-gray-700">123 Eventive Street, City, Country</span>
+                    </div>
+                </div>
+                <!-- Social Media -->
+                <div>
+                    <h4 class="text-lg font-medium text-gray-800 mb-2">Follow Us:</h4>
+                    <div class="flex space-x-10">
+                        <a href="#" class="text-blue-600 hover:text-blue-800 transition">
+                            <i class="fab fa-facebook text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600 transition">
+                            <i class="fab fa-twitter text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-pink-600 hover:text-pink-800 transition">
+                            <i class="fab fa-instagram text-2xl"></i>
+                        </a>
+                        <a href="#" class="text-blue-500 hover:text-blue-700 transition">
+                            <i class="fab fa-linkedin text-2xl"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Mobile menu toggle script
+        const btn = document.getElementById('menu-btn');
+        const menu = document.getElementById('mobile-menu');
+    
+        btn.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+</body>
+</html>

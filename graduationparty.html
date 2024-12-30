@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graduation Party Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: serif;
+        }
+    </style>
+    <!-- Swiper.js CDN for Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+<body class="bg-pink-50">
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+  
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+  
+                <!-- Menu items -->
+                <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                    <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                    <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                    <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                    <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+  
+                </ul>
+            </div>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+            <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+            <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+            <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+            <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+            <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+  
+        </div>
+    </nav>
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-10 mt-36">
+        <!-- Header Section -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold text-pink-500 mb-4 drop-shadow-md">Graduation Party Services</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Celebrate academic achievements with a memorable graduation party organized to perfection.</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Custom Decorations -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://blog.therugseller.co.uk/wp-content/uploads/2018/07/0.jpg" alt="Custom Decorations" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Custom Decorations</h2>
+                    <p class="text-gray-700">Tailored decorations to highlight the graduate's achievements and school colors.</p>
+                </div>
+            </div>
+            <!-- Card 2: Photo Booths -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://m.media-amazon.com/images/I/81B7giEyqYL._AC_UF350,350_QL80_.jpg" alt="Photo Booths" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Photo Booths</h2>
+                    <p class="text-gray-700">Interactive photo booths with props for fun and lasting memories.</p>
+                </div>
+            </div>
+            <!-- Card 3: Catering Options -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://www.cookedgoosecatering.com/wp-content/uploads/2022/04/blog-banner-42.jpg" alt="Catering Options" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Catering Options</h2>
+                    <p class="text-gray-700">Delicious food and drink options customized to your preferences and party theme.</p>
+                </div>
+            </div>
+            <!-- Card 4: Entertainment Services -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://img.freepik.com/premium-photo/highenergy-graduation-party-with-live-music-dj-dance-floor_1314467-110693.jpg" alt="Entertainment Services" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Entertainment Services</h2>
+                    <p class="text-gray-700">Live music, DJs, or games to keep everyone engaged and entertained.</p>
+                </div>
+            </div>
+            <!-- Card 5: Graduation Cakes -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://liliyum.com/cdn/shop/files/SimpleGraduationCake_800x.jpg?v=1694974417" alt="Graduation Cakes" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Graduation Cakes</h2>
+                    <p class="text-gray-700">Customized cakes and desserts to make the occasion extra sweet.</p>
+                </div>
+            </div>
+            <!-- Card 6: Venue Arrangement -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://images.squarespace-cdn.com/content/v1/60da576b8b440e12699c9263/439d6f49-aad1-4534-84bc-288a69f47424/Ovation+1.jpg" alt="Venue Arrangement" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Venue Arrangement</h2>
+                    <p class="text-gray-700">Beautiful indoor or outdoor venue setups tailored to your guest count and style.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="mt-16">
+            <h2 class="text-4xl font-bold text-center text-pink-500 mb-8 drop-shadow-md">Events Conducted by Us</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="https://curatedevents.com/wp-content/uploads/2023/01/Graduation-party-crowd-celebrating.jpg" alt="Graduation Party Event 1" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkUubNXia73q_mLDscuvvrnNjlTihenufACA&s" alt="Graduation Party Event 2" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsYwhL9Fap8SBF0rkZYRlHruP4a2Lwhp1OWw&s" alt="Graduation Party Event 3" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5mfy3AmkvIb7ElUYCVxX7cjEOoxGig1RbMQ&s" alt="Graduation Party Event 4" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                </div>
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="text-center mt-16">
+            <a href="./form_graduation.html"><button class="bg-pink-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-pink-600 transition duration-300 mr-4">
+                Book Now
+            </button></a>
+            <a href="https://wa.me/91123456789?text=Hi%2C%20For%20Event%20Booking%2C%20Leave%20us%20a%20message%20!!!!!
+            ">
+            <button class="border-2 border-pink-500 text-pink-500 px-8 py-4 rounded-full font-semibold hover:bg-pink-500 hover:text-white shadow-lg transition duration-300">
+                Contact Us
+            </button></a>
+        </div>
+    </div>
+
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    </script>
+</body>
+</html>

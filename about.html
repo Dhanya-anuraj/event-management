@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About </title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+<div class="container mx-auto ">
+     <!-- Navbar -->
+     <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+    
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+    
+                <!-- Menu items -->
+                <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                    <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                    <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                    <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                    <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+    
+                </ul>
+            </div>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+            <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+            <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+            <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+            <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+            <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+    
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <div class="bg-gradient-to-r bg-gradient-to-r from-pink-500 to-purple-500 w-full h-32 mt-36 rounded-lg">
+        <h3 class=" text-white text-center text-5xl font-bold font-serif pl-5 py-8">About Us</h3>
+    </div>
+    <!-- Main Content Section -->
+    <div class="px-4 grid md:grid-cols-2 gap-6 mt-9 mb-24 items-center">
+        <!-- Text Section -->
+        <div>
+            <h3 class="font-bold font-serif text-3xl mt-10">Eventive</h3>
+            <div class="w-32 h-1 bg-pink-400 my-4"></div>
+            <p class="text-gray-800 text-justify">
+                Eventive Event Management is a premier event planning service specializing in creating memorable, intimate gatherings tailored to your vision. Despite being a growing name in the event management industry, Eventive has already made its mark by offering unparalleled creativity, attention to detail, and a deeply personalized approach.
+            </p>
+            <p class="mt-4 text-gray-800 text-justify">
+                Led by a passionate team of experts, our coordinators ensure every aspect of your event is handled flawlessly, delivering experiences that exceed expectations. Our commitment to exceptional customer service and meticulous planning sets us apart, making your special moments even more memorable.
+            </p>
+            <p class="mt-4 text-gray-800 text-justify">
+                Eventive  Event Management is capable of handling small to mid-scale events with ease and sophistication. Whether it’s a private celebration, an elegant wedding, or a corporate gathering, our team curates events that reflect your unique style while adhering to industry standards.
+            </p>
+            <p class="mt-6 font-bold text-xl">Our services include:</p>
+            <ul class="list-decimal list-inside mt-4 space-y-2 text-gray-800">
+                <li>Elegant Stage Decorations (Customized to themes)</li>
+                <li>Bridal and Groom Makeovers</li>
+                <li>Bespoke Catering Services</li>
+                <li>Floor Decorations</li>
+                <li>Exclusive Music and Entertainment Arrangements</li>
+                <li>High-quality Photography and Videography</li>
+                <li>Personalized Invitations and Wedding Cards</li>
+            </ul>
+        </div>
+                <!-- Image Section -->
+                <div>
+                    <img 
+                        src="https://png.pngtree.com/thumb_back/fw800/background/20240703/pngtree-event-management-outdoor-background-image_15934727.jpg" 
+                        alt="Event Management" 
+                        class="rounded-lg shadow-lg w-full h-auto  "
+                    >
+                </div>
+                
+        
+    </div>
+    
+</div>
+<!-- Footer -->
+<footer class="bg-gray-200 text-white py-12">
+    <div class="container mx-auto px-4">
+      <!-- Footer Content Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Company Info -->
+        <div>
+          <h2 class="text-2xl font-bold text-pink-400 mb-4">Eventive</h2>
+          <p class="text-black">
+            Planning a full event has never been easier! Eventive is an ISO 9001:2015 Certified Event Management Company
+            offering services for weddings, corporate events, private parties, and more across Kerala.
+          </p>
+        </div>
+  
+        <!-- Quick Links -->
+        <div>
+          <h2 class="text-xl font-bold text-pink-400 mb-4">Quick Links</h2>
+          <ul class="space-y-2">
+            <li><a href="#services" class="text-black hover:text-pink-400">Corporate Events</a></li>
+            <li><a href="#services" class="text-black hover:text-pink-400">Wedding Planner</a></li>
+            <li><a href="#services" class="text-black hover:text-pink-400">Music & Entertainment</a></li>
+            <li><a href="#services" class="text-black hover:text-pink-400">Private Parties</a></li>
+            <li><a href="#services" class="text-black hover:text-pink-400">Destination Wedding</a></li>
+          </ul>
+        </div>
+  
+        <!-- Contact Info -->
+        <div>
+          <h2 class="text-xl font-bold text-pink-400 mb-4">Contact Info</h2>
+          <p class="text-black">Email: 
+            <a href="mailto:info@eventive.com" class="text-pink-400 hover:underline">info@eventive.com</a>
+          </p>
+          <p class="text-black mt-2">Phone: 
+            <a href="tel:9946366785" class="text-pink-400 hover:underline">9946366785</a>
+          </p>
+          <div class="flex space-x-4 mt-4">
+            <a href="https://facebook.com" target="_blank" class="text-white hover:text-pink-400">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" class="text-white hover:text-pink-400">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank" class="text-white hover:text-pink-400">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://www.linkedin.com/" target="_blank" class="text-white hover:text-pink-400">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://x.com/" target="_blank" class="text-white hover:text-pink-400">
+              <i class="fab fa-twitter"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Divider -->
+      <div class="border-t border-gray-700 mt-8"></div>
+  
+      <!-- Footer Bottom -->
+      <div class="flex flex-col md:flex-row justify-between items-center mt-6">
+        <p class="text-black text-sm">&copy; 2024 Eventive. All Rights Reserved.</p>
+        <div>
+          <a href="#privacy" class="text-black hover:text-pink-400 text-sm mx-2">Privacy Policy</a>
+          <a href="#refund" class="text-black hover:text-pink-400 text-sm mx-2">Refund Policy</a>
+          <a href="#terms" class="text-black hover:text-pink-400 text-sm mx-2">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+</footer>
+<script>
+  // Mobile menu toggle script
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  btn.addEventListener('click', () => {
+    menu.classList.toggle('hidden');
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Party Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: serif;
+        }
+    </style>
+    <!-- Swiper.js CDN for Carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body class="bg-pink-50">
+    <nav class="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <!-- Logo -->
+                <a href="./index.html"><img src="./4cb680a9-aa53-46ea-ba24-a3fc47777479-removebg-preview.png" style="height: 85px; width: 180px;" alt=""></a>
+  
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-700 hover:text-pink-400 focus:outline-none">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+  
+                <!-- Menu items -->
+                <ul id="menu" class="hidden md:flex space-x-6 text-gray-700">
+                    <li><a href="./index.html" class="hover:text-pink-400">Home</a></li>
+                    <li><a href="./about.html" class="hover:text-pink-400">About</a></li>
+                    <li><a href="./index2.html" class="hover:text-pink-400">Events</a></li>
+                    <li><a href="./testimonials.html" class="hover:text-pink-400">Testimonials</a></li>
+                    <li><a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a></li>
+  
+                </ul>
+            </div>
+        </div>
+  
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white px-4 py-2 space-y-2 transition duration-300 ease-in-out">
+            <a href="./index.html" class="block text-gray-700 hover:text-pink-400">Home</a>
+            <a href="./about.html" class="block text-gray-700 hover:text-pink-400">About</a>
+            <a href="./index2.html" class="block text-gray-700 hover:text-pink-400">Events</a>
+            <a href="./testimonials.html" class="block text-gray-700 hover:text-pink-400">Testimonials</a>
+            <a href="./contact.html" class="block text-gray-700 hover:text-pink-400">Contact</a>
+  
+        </div>
+    </nav>
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-10">
+        <!-- Header Section -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold text-pink-500 mb-4 mt-36 drop-shadow-md">Birthday Party Services</h1>
+            <p class="text-xl text-gray-600 max-w-2xl mx-auto">Make birthdays extra special with unforgettable themes, decorations, and fun-filled activities tailored to your needs!</p>
+        </div>
+
+        <!-- Services Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Card 1: Themed Decorations -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://minyworld.ca/wp-content/uploads/2022/12/Mill-and-barn-miny-worl-6.jpg" alt="Themed Decorations" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Themed Decorations</h2>
+                    <p class="text-gray-700">Custom decorations with vibrant themes to match your child's favorite characters and interests.</p>
+                </div>
+            </div>
+            <!-- Card 2: Catering Services -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://srimadhuramcatering.com/wp-content/uploads/2024/03/2149617130-1.jpg" alt="Catering Services" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Catering Services</h2>
+                    <p class="text-gray-700">Delicious party menus featuring snacks, cakes, and treats for kids and adults alike.</p>
+                </div>
+            </div>
+            <!-- Card 3: Entertainment & Games -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://res.cloudinary.com/hz3gmuqw6/image/upload/c_fill,f_auto,q_60,w_750/v1/classpop/64e3a7911a79d" alt="Entertainment & Games" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Entertainment & Games</h2>
+                    <p class="text-gray-700">From magicians and clowns to fun games, we ensure non-stop excitement for all ages.</p>
+                </div>
+            </div>
+            <!-- Card 4: Photography & Videography -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://www.sheenalovessunsets.com/wp-content/uploads/2019/12/Dylan-1st-Birthday-7-min.jpg" alt="Photography & Videography" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Photography & Videography</h2>
+                    <p class="text-gray-700">Capture the happiest moments with professional photos and videos of the event.</p>
+                </div>
+            </div>
+            <!-- Card 5: Party Favors -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://assets.wfcdn.com/im/61126094/resize-h210-w210%5Ecompr-r85/2354/235459922/Paper+Party+Favors.jpg" alt="Party Favors" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Party Favors</h2>
+                    <p class="text-gray-700">Customized return gifts and party favors that make every guest feel special.</p>
+                </div>
+            </div>
+            <!-- Card 6: Cake & Dessert Tables -->
+            <div class="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+                <img src="https://images.stockcake.com/public/4/3/a/43a6946a-0746-4460-890a-15a46a6767ce_large/romantic-dessert-setting-stockcake.jpg" alt="Cake & Desserts" class="w-full h-48 object-cover">
+                <div class="p-6">
+                    <h2 class="text-2xl font-semibold text-pink-500 mb-2">Cake & Dessert Tables</h2>
+                    <p class="text-gray-700">Beautiful cakes, cupcakes, and dessert setups to add a sweet touch to your party.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Section -->
+        <div class="mt-16">
+            <h2 class="text-4xl font-bold text-center text-pink-500 mb-8 drop-shadow-md">Events Conducted by Us</h2>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <img src="https://images.stockcake.com/public/4/e/9/4e9de742-f5d3-4359-adf2-6ca28fc75423_large/magical-birthday-wishes-stockcake.jpg" alt="Birthday Event 1" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <img src="https://static.giggster.com/media/activities/18th-birthday-party/uploads/1707233384/1080.jpg" alt="Birthday Event 2" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <img src="https://blog.venuelook.com/wp-content/uploads/2024/01/Birthday-party-check-list-feature-image-660x330.jpg" alt="Birthday Event 3" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <img src="https://saltyoakfarm.com/wp-content/uploads/2024/04/shutterstock_789065428-1920w.webp" alt="Birthday Event 4" class="w-full h-80 object-cover rounded-lg shadow-lg">
+                    </div>
+                </div>
+                <!-- Pagination and Navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+
+        <!-- Call to Action Section -->
+        <div class="text-center mt-16">
+            <a href="./form_birthday.html">
+            <button class="bg-pink-500 text-white px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-pink-600 transition duration-300 mr-4">
+                Book Now
+            </button></a>
+            <a href="https://wa.me/91123456789?text=Hi%2C%20For%20Event%20Booking%2C%20Leave%20us%20a%20message%20!!!!!
+            "><button class="border-2 border-pink-500 text-pink-500 px-8 py-4 rounded-full font-semibold hover:bg-pink-500 hover:text-white shadow-lg transition duration-300">
+                Contact Us
+            </button></a>
+        </div>
+    </div>
+
+    <!-- Swiper.js Script -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.mySwiper', {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+        const btn = document.getElementById('menu-btn');
+    const menu = document.getElementById('mobile-menu');
+
+    btn.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+    
+    </script>
+</body>
+</html>
